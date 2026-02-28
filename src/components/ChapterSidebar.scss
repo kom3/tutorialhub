@@ -1,9 +1,9 @@
 .chapter-sidebar {
-  width: 220px;
+  width: 300px;
   flex-shrink: 0;
   /* sticky sidebar that follows scroll */
   position: sticky;
-  top: 51px;
+  top: 84px;
   height: fit-content;
   max-height: 90vh;
   overflow-y: auto;

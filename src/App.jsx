@@ -11,6 +11,7 @@ import ViewPage from "./pages/view";
 // layout components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/scrollToTop";
 
 /**
  * Application root. We're using react-router-dom to keep
@@ -58,14 +59,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Landing />} />
           {/* topicId is required; chapterId is optional and handled inside ViewPage */}
-          <Route
-            path="/:topicId/:chapterId?"
-            element={<ViewPage />}
-          />
+          <Route path="/:topicId/:chapterId?" element={<ViewPage />} />
         </Routes>
         <Footer />
       </Router>
