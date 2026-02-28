@@ -1,7 +1,8 @@
 export default {
-  order: 6,
+  order: 11,
   id: "command-design-pattern",
   title: "Command Design Pattern",
+  category: "Design Patterns",
   sections: [
     {
       title: "Overview",

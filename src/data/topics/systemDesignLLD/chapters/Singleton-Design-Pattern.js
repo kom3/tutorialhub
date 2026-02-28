@@ -1,7 +1,8 @@
 export default {
-  order: 3,
+  order: 8,
   id: "singleton-pattern",
   title: "Singleton Design Pattern",
+  category: "Design Patterns",
   sections: [
     {
       title: "Overview",

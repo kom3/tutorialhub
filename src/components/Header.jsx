@@ -9,7 +9,7 @@ const Header = () => (
   <header className="site-header">
     <div className="container">
       <h1 className="logo">
-        <Link to="/">Tutorials Hub</Link>
+        <Link to="/">Code Layers</Link>
       </h1>
       {/* simple navigation: keep a home button for convenience */}
       <nav className="site-nav">

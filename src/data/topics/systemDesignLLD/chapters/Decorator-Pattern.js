@@ -1,7 +1,8 @@
 export default {
-  order: 5,
+  order: 10,
   id: "decorator-pattern",
   title: "Decorator Design Pattern",
+  category: "Design Patterns",
   sections: [
     {
       title: "Overview",

@@ -1,7 +1,8 @@
 export default {
-  order: 1,
+  order: 6,
   id: "strategy-pattern",
   title: "Strategy Design Pattern",
+  category: "Design Patterns",
   sections: [
     {
       title: "Overview",

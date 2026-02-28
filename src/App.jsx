@@ -7,6 +7,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 // page components
 import Landing from "./pages/landing";
 import ViewPage from "./pages/view";
+import About from "./pages/about";
 
 // layout components
 import Header from "./components/Header";
@@ -63,6 +64,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/about" element={<About />} />
           {/* topicId is required; chapterId is optional and handled inside ViewPage */}
           <Route path="/:topicId/:chapterId?" element={<ViewPage />} />
         </Routes>

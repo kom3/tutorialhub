@@ -1,7 +1,8 @@
 export default {
-  order: 4,
+  order: 9,
   id: "observer-pattern",
   title: "Observer Design Pattern",
+  category: "Design Patterns",
   sections: [
     {
       title: "Overview",

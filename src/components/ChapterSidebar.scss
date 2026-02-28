@@ -9,10 +9,22 @@
   overflow-y: auto;
 
   nav {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 5rem 1.5rem;
     background: #fafafa;
     border-right: 2px solid var(--color-border, #ddd);
     border-radius: 0;
+    /* spacing between category groups */
+    .chapter-group + .chapter-group {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .group-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    color: var(--color-secondary);
+    text-transform: uppercase;
   }
 
   nav ul {

@@ -12,13 +12,30 @@ const ChapterSidebar = ({ topicId, chapters, activeChapterId }) => {
   return (
     <aside className="chapter-sidebar">
       <nav>
-        <ul>
-          {chapters.map((c) => (
-            <li key={c.id} className={c.id === activeChapterId ? "active" : ""}>
-              <Link to={`/${topicId}/${c.id}`}>{c.title}</Link>
-            </li>
-          ))}
-        </ul>
+        {/** group chapters by category (defaults to uncategorized) */}
+        {(() => {
+          const groups = new Map();
+          chapters.forEach((c) => {
+            const key = c.category || "";
+            if (!groups.has(key)) groups.set(key, []);
+            groups.get(key).push(c);
+          });
+          return Array.from(groups.entries()).map(([cat, items]) => (
+            <div key={cat || "__default"} className="chapter-group">
+              {cat && <h4 className="group-title">{cat}</h4>}
+              <ul>
+                {items.map((c) => (
+                  <li
+                    key={c.id}
+                    className={c.id === activeChapterId ? "active" : ""}
+                  >
+                    <Link to={`/${topicId}/${c.id}`}>{c.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ));
+        })()}
       </nav>
     </aside>
   );

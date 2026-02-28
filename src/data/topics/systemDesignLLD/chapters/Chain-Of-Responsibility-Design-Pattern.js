@@ -1,7 +1,8 @@
 export default {
-  order: 12,
+  order: 17,
   id: "chain-of-responsibility-design-pattern",
   title: "Chain Of Responsibility Design Pattern",
+  category: "Design Patterns",
   sections: [
     {
       title: "Overview",

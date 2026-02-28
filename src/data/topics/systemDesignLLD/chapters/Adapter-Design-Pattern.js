@@ -1,7 +1,8 @@
 export default {
-  order: 7,
+  order: 12,
   id: "adapter-design-pattern",
   title: "Adapter Design Pattern",
+  category: "Design Patterns",
   sections: [
     {
       title: "Overview",

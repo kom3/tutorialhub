@@ -1,11 +1,12 @@
 export default {
-  order: 10,
+  order: 15,
   id: "template-design-pattern",
   title: "Template Design Pattern",
+  category: "Design Patterns",
   sections: [
     {
       title: "Overview",
-      body: " The Template Design Pattern is a behavioral pattern that defines the skeleton of an algorithm in a base class, allowing subclasses to override specific steps without changing the overall structure. In Low‑Level Design (LLD), it is widely used to enforce a consistent workflow across multiple implementations, following the \"Hollywood Principle\": \"Don't call us, we'll call you\".",
+      body: ' The Template Design Pattern is a behavioral pattern that defines the skeleton of an algorithm in a base class, allowing subclasses to override specific steps without changing the overall structure. In Low‑Level Design (LLD), it is widely used to enforce a consistent workflow across multiple implementations, following the "Hollywood Principle": "Don\'t call us, we\'ll call you".',
     },
     {
       title: "Python Implementation Example",
@@ -75,7 +76,7 @@ execute_processor(csv_proc)`,
       note: [
         "Enforce Consistency: When you have multiple classes with nearly identical algorithms that must follow a strict order.",
         "Code Reuse: To pull up common code into a superclass and avoid duplication (DRY principle).",
-        "Framework Development: To provide a skeleton that users can extend by providing their own implementation for certain \"plugs\".",
+        'Framework Development: To provide a skeleton that users can extend by providing their own implementation for certain "plugs".',
       ],
     },
   ],

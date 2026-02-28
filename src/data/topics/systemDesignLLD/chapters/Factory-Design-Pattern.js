@@ -1,7 +1,8 @@
 export default {
-  order: 2,
+  order: 7,
   id: "factory-design-pattern",
   title: "Factory Design Pattern",
+  category: "Design Patterns",
   sections: [
     {
       title: "Overview",

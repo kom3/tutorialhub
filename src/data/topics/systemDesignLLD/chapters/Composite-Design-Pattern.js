@@ -1,7 +1,8 @@
 export default {
-  order: 9,
+  order: 14,
   id: "composite-design-pattern",
   title: "Composite Design Pattern",
+  category: "Design Patterns",
   sections: [
     {
       title: "Overview",

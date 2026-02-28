@@ -23,6 +23,15 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     opacity: 0;
     animation: fadeIn 1s ease-out 0.5s forwards;
+    /* gradient backgrounds for each card container to add color interest */
+    > div {
+      padding: 0.5rem;
+      border-radius: 8px;
+    }
+    > div:nth-child(4n+1) { background: linear-gradient(135deg, #ffecd2, #fcb69f); }
+    > div:nth-child(4n+2) { background: linear-gradient(135deg, #d4fc79, #96e6a1); }
+    > div:nth-child(4n+3) { background: linear-gradient(135deg, #a1c4fd, #c2e9fb); }
+    > div:nth-child(4n+4) { background: linear-gradient(135deg, #fbc2eb, #a6c1ee); }
   }
 }
 

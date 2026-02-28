@@ -1,7 +1,8 @@
 export default {
-  order: 8,
+  order: 13,
   id: "facade-design-pattern",
   title: "Facade Design Pattern",
+  category: "Design Patterns",
   sections: [
     {
       title: "Overview",

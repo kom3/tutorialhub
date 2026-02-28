@@ -10,6 +10,10 @@ const chapters = Object.values(chapterModules)
   .filter(Boolean)
   .sort((a, b) => (a.order || 0) - (b.order || 0));
 
+// each chapter object may now include a `category` string.  The sidebar
+// component groups chapters by this value, allowing topics to be segregated
+// (e.g. "Design Principles" vs "Design Patterns" vs "Practice").
+
 export default {
   id: "LLD",
   title: "System Design - Low Level Design (LLD)",

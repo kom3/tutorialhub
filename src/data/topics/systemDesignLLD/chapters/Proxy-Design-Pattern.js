@@ -1,7 +1,8 @@
 export default {
-  order: 11,
+  order: 16,
   id: "proxy-design-pattern",
   title: "Proxy Design Pattern",
+  category: "Design Patterns",
   sections: [
     {
       title: "Overview",

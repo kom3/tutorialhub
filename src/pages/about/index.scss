@@ -1,0 +1,26 @@
+/* simple styling for about page */
+.about-page {
+  padding: 3rem 0;
+  background: var(--color-bg);
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: var(--color-primary);
+      text-decoration: underline;
+    }
+  }
+}

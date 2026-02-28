@@ -64,6 +64,8 @@ export default {
   order: 1,  // optional: controls sort order (lower = earlier)
   id: "arrays",
   title: "Arrays",
+  // optional category string for grouping pages in the sidebar
+  // e.g. "Design Patterns" or "Design Principles"
   sections: [
     { title: "Overview", body: "..." },
     { title: "Operations", body: "...", code: "...", codeLang: "python" },

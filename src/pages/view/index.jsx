@@ -84,6 +84,9 @@ const ViewPage = () => {
           {topic.subtitle && <h2>{topic.subtitle}</h2>}
 
           {/* render selected chapter */}
+          {selectedChapter?.category && (
+            <h3 className="chapter-category">{selectedChapter.category}</h3>
+          )}
           <h2>{selectedChapter?.title}</h2>
           {selectedChapter?.sections.map((section, idx) => (
             <Section key={section.title ?? idx} {...section} />

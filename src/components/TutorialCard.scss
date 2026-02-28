@@ -1,6 +1,14 @@
 .tutorial-card {
   /* ensure the MUI card fills its container and allows hover styles */
   height: 100%;
+  /* restore default MUI card background and simplify hover
+     (previous design with transparent cards was not liked) */
+  background-color: var(--color-card-bg) !important;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  }
   .subtitle {
     /* fallback in case MUI typography isn't used */
     font-size: 0.9rem;
