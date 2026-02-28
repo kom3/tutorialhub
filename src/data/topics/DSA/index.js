@@ -13,8 +13,8 @@ const chapters = Object.values(chapterModules)
 export default {
   id: "DSA",
   title: "Data Structures & Algorithms",
-  published: false, // set to false to hide from landing page
-  subtitle: "Core building blocks for coding interviews",
+  published: true, // set to false to hide from landing page
+  subtitle: "Core building blocks for coding interviews: Coming soon...",
   chapters,
   footer: "Good luck with your practice!",
 };
